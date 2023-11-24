@@ -18,6 +18,5 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run:
-          docker build -t ghcr.io/sagr0m/24-noyab:1.0 .
-          docker push ghcr.io/sagr0m/24-noyab:1.0
+      - run: docker build -t ghcr.io/sagr0m/24-noyab:1.0 .
+      - run: docker push ghcr.io/sagr0m/24-noyab:1.0
